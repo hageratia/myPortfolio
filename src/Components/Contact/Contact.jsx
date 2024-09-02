@@ -46,14 +46,13 @@ export default function Contact() {
     validMessage();
 
     if (isNameValid && isEmailValid && isMessageValid) {
-      // إعداد بيانات النموذج للإرسال
+    
       const templateParams = {
         name,
         email,
         message,
       };
 
-      // إرسال البريد باستخدام EmailJS
       emailjs
         .send(
           "service_fw03hms",
